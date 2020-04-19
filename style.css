@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: 'Poppins', sans-serif;
+  max-width: 1440px;
+  font-size: 15px;
+}
+
+.header {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.first-tagline {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.second-tagline {
+  font-weight: 600;
+  margin: 0;
+}
+
+.description {
+  font-weight: 200;
+  margin: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -6,7 +6,8 @@ body {
   background-color: hsl(0, 0%, 98%);
   font-family: 'Poppins', sans-serif;
   max-width: 1440px;
-  font-size: 15px;
+  font-size: 1.2em;
+  color: hsl(234, 12%, 34%);
 }
 
 .header {
@@ -52,22 +53,22 @@ body {
   border-top: 3px solid hsl(180, 62%, 55%);
   background-color: #fff;
   padding: 1.5em;
-  margin: .5em 1em;
+  margin: 1em 1.5em;
   display: flex;
   flex-direction: column;
   border-radius: 2.5%;
+  box-shadow: 3px 4px 9px 0px hsl(229, 6%, 66%);
 }
 
-.card:nth-of-type(2) {
+.card:nth-child(2) {
   border-top: 3px solid hsl(0, 78%, 62%);
 }
-.card:nth-of-type(3) {
+.card:nth-child(3) {
   border-top: 3px solid hsl(34, 97%, 64%);
 }
-/* .card:nth-of-type(4) {
+.vertical > .card:first-child {
   border-top: 3px solid hsl(212, 86%, 64%);
-} */
-
+}
 
 .card h3 {
   margin: 0;
@@ -95,4 +96,22 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .cards-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .vertical {
+    width: 100%;
+  }
+
+  .attribution {
+    font-size: 15px;
+  }
 }

@@ -29,6 +29,65 @@ body {
   margin: 5px;
 }
 
+.cards-container {
+  margin: 5% 15%;
+  width: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 15px; */
+  padding: 0;
+}
+
+.card {
+  width: 35%;
+  border-top: 3px solid hsl(180, 62%, 55%);
+  background-color: #fff;
+  padding: 1.5em;
+  margin: .5em 1em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2.5%;
+}
+
+.card:nth-of-type(2) {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+.card:nth-of-type(3) {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+/* .card:nth-of-type(4) {
+  border-top: 3px solid hsl(212, 86%, 64%);
+} */
+
+
+.card h3 {
+  margin: 0;
+}
+.card p {
+  font-weight: 200;
+  margin: 10px 0;
+}
+
+.vertical > .card {
+  padding: 1.5em;
+  width: 100%;
+}
+
+.icon {
+  width: 3em;
+  align-self: flex-end;
+  padding-top: 2em;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
